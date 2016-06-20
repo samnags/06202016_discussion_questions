@@ -1,4 +1,6 @@
 6/20 MONDAY discussion questions
+Partner: Grace Juster
+
 1. Think about arrays
 - What are some of the methods (non-iterator methods) that you know?
 - When are they used?
