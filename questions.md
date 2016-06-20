@@ -1,3 +1,5 @@
+Worked with: Kellye, Emmanuel, Clark
+
 1. Think about arrays
 - What are some of the methods (non-iterator methods) that you know?
 - When are they used?
@@ -75,11 +77,12 @@
 
   4. Now write the method that will give me a list of books written by an author.
 
-  def self.find_authors(author)
-    self.all.select do |book|
-    book.author == author     
+    def self.find_authors(author)
+      self.all.select do |book|
+        book.author == author
+      end 
+    book_instances.map{ |books| books.name } 
     end 
-  end 
 
   5. Now write a method that will give a list of all of the genre's of an author.
   
@@ -87,5 +90,7 @@
       find_authors(author).select |book|
       book.genre
       end 
+    book_instances.map{ |books| books.genre } 
     end 
+
 
