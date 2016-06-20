@@ -24,10 +24,10 @@ pop, unshift -> removes elements in last and first position, returns those eleme
   - class-specific methods eliminate dependencies
 
   2. What is the difference between using a getter method, and just referencing the instance variable?
-  - using a getter method allows the user to retrieve the variable's value outside of the cass
+  - using a getter method allows the user to retrieve the variable's value outside of the class
 
   3. Should a method that finds the correct user by name (eg. find_by_name?) be a class method or instance method?  Why?
-  - class method; you need to iterate through all of the users so the method isn't specific to just one instance of user
+  - class method; you need to iterate through all of the users which means the method isn't specific to just one instance of user
 
   4. How does initialize work in an object?
   - initialize defines which arguments are needed to create a new instance.  also defines actions that are performed / values that are set when a new instance is created
