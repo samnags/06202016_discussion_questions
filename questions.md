@@ -67,6 +67,8 @@
   2. Which object is going act as my join - and thus store the data?
     - Genre has the list of books and the list of authors, thus will serve as the join
   3. Ok, now write out the three classes and fill in the belongs to relations.
-    
+
   4. Now write the method that will give me a list of books written by an author.
   5. Now write a method that will give a list of all of the genre's of an author.
+
+  3 4 5  answered in the attached ruby files
