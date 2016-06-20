@@ -1,0 +1,82 @@
+6/20 MONDAY discussion questions
+1. Think about arrays
+- What are some of the methods (non-iterator methods) that you know?
+- When are they used?
+
+array methods:
+non iterators:
+.flatten  - to get rid of nesting 
+.join - convert into strings
+.length - # of elements in the array
+.compact - takes out nil values
+.sort - sort in alphabetical / numerical order
+.uniq - removing duplicates
+
+
+
+
+
+2. Now list iterator methods for arrays
+- There are four main ones that we have discussed
+- When do you use each one
+
+.each - operational - you don't actually return new values
+.each_with_object  - creates a new data structure for the elements that fit a criteria
+.each_with_index - return elements with the index
+.map /.collect - return the output array
+.select / .detect  - return the ones that fit a certain criteria
+.any? - returning True/False/Nil for the existence of an element
+.delete - delete the ones that meet a criteria
+.find - find the first that meets a criteria
+
+3. Now onto objects
+1. Why do we even have objects?  Why not just use hashes?
+objects store data and methods. You can perform very specific set of actions on a class of objects. for examples dogs certainly have different behaviors from other classes of animals or things. hashes will get messy.
+
+
+2. What is the difference between using a getter method, and just referencing the instance variable?
+Getter method you are setting it up so you can retrieve it from other classes. Also, the getter method can be used to specify which values you want to retrieve.
+Instance variable is only for reference. 
+
+
+3. Should a method that finds the correct user by name (eg. find_by_name?) be a class method or instance method?  Why?
+it should be a class method because you re gonna have to look through all the objects in the class in order to find it.
+
+4. How does initialize work in an object?
+it creates an instance of the object when you do Class.new, and in the mean time giving them a set of attributes, for example name, collection, etc.
+
+5. What two methods will attr_accessor :name write?
+Write them out please... 
+getter & setter
+setter:
+def name=(name)
+  @name = name
+end
+
+getter:
+def name
+  @name
+end
+
+
+ 
+
+4. Object Relations
+Consider books, authors and genres.
+1. Draw out the relations between the objects.  Assume a book can only have one genre.
+Authors have many books
+Authors have many genres through the books
+Each book belongs to a genre
+Each book belongs to an author
+Genres have many books and authors
+
+2. Which object is going act as my join - and thus store the data?
+books will act as the join.
+
+3. Ok, now write out the three classes and fill in the belongs to relations.
+Please refer to discussion.rb for answers for #3-5.
+
+4. Now write the method that will give me a list of books written by an author.
+
+
+5. Now write a method that will give a list of all of the genre's of an author.
