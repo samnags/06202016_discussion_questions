@@ -1,11 +1,11 @@
+#Partner: Grace Juster
+
 class Book
   attr_accessor :name, :author, :genre
   def initialize(name)
     @name = name
   end
 end
-
-
 
 class Author
   attr_accessor :name, :books
@@ -25,9 +25,7 @@ class Author
       @genres << book.genre
     end
   end 
-    
 end
-
 
 class Genre
     attr_accessor :name, :books
@@ -41,7 +39,4 @@ class Genre
     @books<< book
     book.genre = self
   end
-
-
-
 end
