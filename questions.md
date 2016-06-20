@@ -1,5 +1,3 @@
-Worked with: Kellye, Emmanuel, Clark
-
 1. Think about arrays
 - What are some of the methods (non-iterator methods) that you know?
 - When are they used?
