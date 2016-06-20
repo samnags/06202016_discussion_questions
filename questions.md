@@ -64,16 +64,8 @@
     end 
 
   5. Now write a method that will give a list of all of the genre's of an author.
-def self.find_genres(author)
-    	  find_authors(author).select |book|
-  book.genre
-    	  end 
-           end 
-
-
-
 class Book
- 
+  attr_accessor :name, :genre, :author
   @@all = []
   
   def initialize (name, author, genre)
@@ -94,9 +86,33 @@ class Book
   end 
 
   def self.find_genres(author)
-    find_authors(author).select |book|
+    find_authors(author).select do |book|
       book.genre
     end 
   end 
 
 end 
+
+ 
+
+
+
+#has many books
+class Genre
+  
+  attr_accessor :name 
+  def initialize(name)
+    @name = name 
+  end 
+
+end 
+
+#has many books
+class Author
+  attr_accessor :name
+  def initialize(name)
+    @name = name 
+  end 
+
+end  
+
