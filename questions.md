@@ -58,6 +58,7 @@ pop, unshift -> removes elements in last and first position, returns those eleme
   3. Ok, now write out the three classes and fill in the belongs to relations.
 
   class Book
+  attr_accessor :author, :genre
     def initialize
       @author
       @genre
@@ -65,6 +66,7 @@ pop, unshift -> removes elements in last and first position, returns those eleme
   end
 
   class Genre
+  attr_accessor :authors, :books
     def initialize
       @authors = []
       @books = []
@@ -72,6 +74,7 @@ pop, unshift -> removes elements in last and first position, returns those eleme
   end
 
   class Author
+  attr_accessor :genres, :books
     def initialize
       @genres = []
       @books = []
